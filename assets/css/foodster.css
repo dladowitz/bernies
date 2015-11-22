@@ -717,7 +717,7 @@ fieldset[disabled] .btn-xl.active {
   margin-top: 100px;
 }
 .navbar-default {
-  background-color: #e0ded9;
+  background-color: #70d0ec;
   border-color: transparent;
   border-radius: 0;
   position: relative;
@@ -769,7 +769,7 @@ fieldset[disabled] .btn-xl.active {
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #2e2e32;
+  color: white;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -947,7 +947,7 @@ header .item .seafood_one {
   background-image: url('../images/seafood_background_1.jpg');
 }
 header .item .fastfood_item_one {
-  background-image: url('../images/fastfood.jpg');
+  background-image: url('../images/lobster-tail-2.jpg');
 }
 header .item .fastfood_item_two {
   background-image: url('../images/fastfood_2.jpg');
@@ -1637,6 +1637,7 @@ video {
   .navbar-default .navbar-brand img,
   .navbar-inverse .navbar-brand img {
     max-width: 150px;
+    max-height: 390%;
   }
   .navbar-default .navbar-nav > .active > a,
   .navbar-inverse .navbar-nav > .active > a {
