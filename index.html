@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Foodster - Bar &amp; Restaurant Theme</title>
+    <title>Bernies Tiki Hut</title>
 
     <!-- Retina.js -->
     <!-- WARNING: Retina.js doesn't work if you view the page via file:// -->
@@ -43,13 +43,14 @@
 
 <body id="page-top" class="index">
 
-    <div class="loading-screen">
+<!-- TODO enable screen loading -->
+    <!-- <div class="loading-screen">
         <div class="content animated fadeInDown">
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <h2 class="section-heading">Baking the page</h2>
+            <h2 class="section-heading">Grilling Up The Page</h2>
             <h3 class="section-subheading">Please wait...</h3>
         </div>
-    </div>
+    </div> -->
 
     <!-- Main Slider -->
     <header id="header" class="intro">
@@ -60,49 +61,21 @@
 
             <!-- Start slide -->
             <div class="item active">
-                <div class="fill item_one"></div>
+                <div class="fill fastfood_item_one"></div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="slide-content animated fadeInDown">
-                            <span class="section-icon">d</span>
-                            <h1>Foodster</h1>
-                            <h2>The ultimate theme for any restaurant or bar</h2>
+                          <div class="logo">
+                            <img src="assets/images/bernies-logo.png" alt="bernies logo" />
+                          </div>
+                            <!-- <span class="section-icon">n</span>
+                            <h1>Bernies</h1>
+                            <h2>Fresh Food &amp; Great Drinks</h2> -->
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
             <!-- End slide -->
-
-            <!-- Start slide -->
-            <div class="item">
-                <div class="fill item_two"></div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <div class="slide-content animated fadeInDown">
-                            <span class="section-icon">f</span>
-                            <h1>Crafted by designers</h1>
-                            <h2>Coded for developers</h2>
-                        </div>
-                    </div>
-                </div><!-- /.row -->
-            </div>
-            <!-- End slide -->            
-        
-            <!-- Start slide -->
-            <div class="item">
-                <div class="fill item_three"></div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <div class="slide-content animated zoomIn">
-                            <span class="section-icon">x</span>
-                            <h1>Fully documented and supported</h1>
-                            <h2>All customers receive free support</h2>
-                        </div>
-                    </div>
-                </div><!-- /.row -->
-            </div>
-            <!-- End slide -->   
-
           </div><!-- /.carousel-inner -->
 
         <a href="#nav" class="btn page-scroll header-scroll">
@@ -137,20 +110,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a class="page-scroll" href="#restaurants">Restaurants</a></li>
-                    <li><a class="page-scroll" href="#menus">Menus</a></li>
-                    <li><a class="page-scroll" href="#book">Book a Table</a></li>
+                    <li><a class="page-scroll" href="#menu-one">Menu</a></li>
+                    <li><a class="page-scroll" href="#">Location</a></li>
                 </ul>
                 <a class="navbar-brand page-scroll" href="#header">
-                    <img src="assets/images/foodster_navigation_logo.png" alt="">
+                    <img src="assets/images/bernies-logo-no-shadow.png" alt="bernies logo">
                 </a>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="coffeehouse.html">Coffee House</a></li>
                         <li><a href="grill.html">Grill Restaurant</a></li>
-                        <li><a href="fastfood.html">Fast Food Restaurant</a></li>
+                        <li class="active"><a href="fastfood.html">Fast Food Restaurant</a></li>
                         <li><a href="seafood.html">Seafood Restaurant</a></li>
                         <li class="divider"></li>
                         <li><a href="blog.html">Blog Home</a></li>
@@ -164,7 +136,7 @@
                         <li><a href="404.html">404 Error Page</a></li>
                         <li><a href="page.html">Blank Page</a></li>
                       </ul>
-                    </li>
+                    </li> -->
                     <li><a class="page-scroll" href="#gallery">Gallery</a></li>
                     <li><a class="page-scroll" href="#footer">Contact Us</a></li>
                 </ul>
@@ -177,14 +149,14 @@
     <!-- End Navigation -->
 
     <!-- Introduction Section -->
-    <section id="intro">
+    <section id="intro" class="wow zoomIn">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center wow zoomIn">
-                    <h2 class="section-heading">A unique experience for food lovers.</h2>
-                    <span class="section-divider">M</span>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A little bit of paradise on the beach.</h2>
+                    <span class="section-divider" id="intro-chili">d</span>
                     <h3 class="section-subheading text-muted">Homemade food, local ingredients <span>... carefully prepared.</span></h3>
-                    <a href="#unique" class="page-scroll">
+                    <a href="#menu-one" class="page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
@@ -192,16 +164,148 @@
         </div><!-- /.container -->
     </section>
     <!-- End Introduction Section -->
- 
+
+
+
+    <section id="menu-one" class="callout wow fadeIn">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h2 class="section-heading wow fadeInDown">Menu</h2>
+          </div>
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+    </section>
+
+    <!-- Menu start -->
+
+    <section class="module">
+      <div class="container">
+
+        <div class="row wow fadeIn">
+
+          <div class="col-sm-6">
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Cracked Conch</h4>
+                  <div class="menu-detail">Mushroom / Veggie / White Sources</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Lobster Tail</h4>
+                  <div class="menu-detail">Lemon / Garlic / Beans</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Fried Snapper</h4>
+                  <div class="menu-detail">Lamb / Wine / Butter</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Conch Fritters</h4>
+                  <div class="menu-detail">Oysters / Veggie / Ginger</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Pan Fried Chicken</h4>
+                  <div class="menu-detail">Pepper / Chicken / Honey</div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- .col-sm-6 -->
+
+          <div class="col-sm-6">
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Bahama Mama</h4>
+                  <div class="menu-detail">Mushroom / Veggie / White Sources</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Cubra Libre</h4>
+                  <div class="menu-detail">Lemon / Garlic / Beans</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Gin & Tonic</h4>
+                  <div class="menu-detail">Lamb / Wine / Butter</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Imported Oysters Grill (5 Pieces)</h4>
+                  <div class="menu-detail">Oysters / Veggie / Ginger</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title">Meatloaf with Black Pepper-Honey BBQ</h4>
+                  <div class="menu-detail">Pepper / Chicken / Honey</div>
+                </div>
+              </div>
+            </div> -->
+
+          </div><!-- .col-sm-6 -->
+
+        </div><!-- .row -->
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-sm-offset-3">
+            <span class="section-divider">M</span>
+          </div>
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+    </section>
+    <!-- Menu end -->
+
     <!-- Unique Chain Section -->
     <section id="unique">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <span class="section-icon">x</span>
-                    <h2 class="section-heading">Foodster is a unique chain of restaurants &amp; bars for food lovers.</h2>
-                    <h3 class="section-subheading">We specialise in the special, offering a welcoming dining experience for couples, families and foodies.</h3>
-                    <a href="#restaurants" class="page-scroll">
+                    <h2 class="section-heading">Bernie's is a unique place sitting right on the edge of Grand Bahama Island.</h2>
+                    <h3 class="section-subheading">Specializing in Seafood, Rum Drinks, and Relaxing.</h3>
+                    <h4>(oh and bonfires if it's Tuesday)</h4>
+                    <a href="#gallery" class="page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
@@ -210,57 +314,8 @@
     </section>
     <!-- End Unique Chain Section -->
 
-    <!-- Choose Restaurant Section -->
-    <section id="restaurants">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading wow fadeInDown">Select your Foodster</h3>
-                </div>
-            </div><!-- /.row-->
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInLeft">
-                    <ul>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Manchester</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">London</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Leeds</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp">
-                    <ul>
-                        <li><a href="#restaurantModal1" data-toggle="modal">New York</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Tokyo</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Edinburgh</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp">
-                    <ul>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Pittsburgh</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">San Francisco</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Miami</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInRight">
-                    <ul>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Hamburg</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Sydney</a></li>
-                        <li><a href="#restaurantModal1" data-toggle="modal">Glasgow</a></li>
-                    </ul>
-                </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">      
-                    <a href="#menus" class="page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- End Restaurants Section -->
-
     <!-- Menus Section -->
-    <section id="menus">
+    <!-- <section id="menus">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -277,9 +332,9 @@
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
+            </div>
+        </div>
+    </section> -->
     <!-- End Menus Section -->
 
     <!-- Book Section -->
@@ -287,83 +342,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading wow fadeInDown">Book a table</h2>
-                    <h3 class="section-subheading wow fadeInDown">Tell us your name, the occasion of your visit, and how many are in your party...</h3>
+                    <h2 class="section-heading wow fadeInDown">Photo Gallery</h2>
+                    <h3 class="section-subheading wow fadeInDown">Check Us Out</h3>
                 </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 wow fadeInUp signup_form">
-                    
-                      <form id="bookForm" class="form form-table text-center" name="table_reservation" novalidate>
-                        <h6>All fields required.</h6>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="first_name1">first name</label>
-                            <input class="form-control hint" type="text" id="first_name1" name="first_name" placeholder="first name" required data-validation-required-message="Please enter your first name.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="last_name1">last name</label>
-                            <input class="form-control hint" type="text" id="last_name1" name="last_name" placeholder="last name" required data-validation-required-message="Please enter your last name.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="email1">email</label>
-                            <input class="form-control hint" type="email" id="email1" name="email" placeholder="email@" required data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="phone1">phone</label>
-                            <input class="form-control hint" type="text" id="phone1" name="phone" placeholder="phone" required data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="reserv_date1">reservation date</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="reserv_date1" name="reserv_date" placeholder="reservation date" required data-validation-required-message="Please enter your reservation date.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="numb_guests1">number of guests</label>
-                            <input class="form-control hint" type="text" id="numb_guests1" name="numb_guests" placeholder="number of guests" required data-validation-required-message="Please enter number of guests.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="alt_reserv_date1">alternate reservation date</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="alt_reserv_date1" name="alt_reserv_date" placeholder="alternate reservation date" required data-validation-required-message="Please enter your alternate reservation date.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="time1">time</label>
-                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="time1" name="time" placeholder="time" required="" autocomplete="off" data-validation-required-message="Please enter your arrival time.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12">
-                            <p>Due to the limitation of seats, we only accept a maximum of six people per booking. Private hire of the premises is available (for 14 people) with bespoke menus on request.</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl btn-primary">submit</button>
-                          </div>
-                        </div>
-                      </form>
-                </div>
-                <div class="col-sm-12">
-                    <a href="#gallery" class="page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
+            </div>
+        </div>
     </section>
     <!-- End Book Section -->
 
@@ -375,25 +358,37 @@
             <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#gallery-carousel" data-slide-to="1"></li>
             <li data-target="#gallery-carousel" data-slide-to="2"></li>
+            <li data-target="#gallery-carousel" data-slide-to="3"></li>
+            <li data-target="#gallery-carousel" data-slide-to="4"></li>
+            <li data-target="#gallery-carousel" data-slide-to="5"></li>
+            <li data-target="#gallery-carousel" data-slide-to="6"></li>
           </ol><!-- /.carousel-indicators -->
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <!-- Start slide -->
-            <div class="item active">
-                <img src="assets/images/gallery.jpg" alt="" data-no-retina>
+            <div class="item active" style="background-image: url('assets/images/bernies-beach-2.jpg')">
+                <!-- <img src="assets/images/bernies-bonfire.jpg" alt="bonfire" data-no-retina> -->
             </div>
             <!-- End slide-->
-            <!-- Start slide -->
-            <div class="item">
-                <img src="assets/images/gallery2.jpg" alt="" data-no-retina>
+            <div class="item" style="background-image: url('assets/images/bernies-bonfire.jpg')">
+                <!-- <img src="assets/images/gallery-bernies-beach-2.jpg" alt="beach" data-no-retina> -->
             </div>
-            <!-- End slide -->
-            <!-- Start slide -->
-            <div class="item">
-                <img src="assets/images/gallery3.jpg" alt="" data-no-retina>
+            <div class="item" style="background-image: url('assets/images/bernies-kids.jpg')">
+                <!-- <img src="assets/images/bernies-kids.jpg" alt="kids" data-no-retina> -->
             </div>
-            <!-- End slide -->
+            <div class="item" style="background-image: url('assets/images/bernies-lobster.jpg')">
+                <!-- <img src="assets/images/bernies-lobster.jpg" alt="lobster" data-no-retina> -->
+            </div>
+            <div class="item" style="background-image: url('assets/images/bernies-beach-3.jpg')">
+                <!-- <img src="assets/images/bernies-beach-3.jpg" alt="bernies beach" data-no-retina> -->
+            </div>
+            <div class="item" style="background-image: url('assets/images/bernies-setup-2.jpg')">
+                <!-- <img src="assets/images/bernies-setup-2.jpg" alt="bernie" data-no-retina> -->
+            </div>
+            <div class="item" style="background-image: url('assets/images/bernies-setup.jpg')">
+                <!-- <img src="assets/images/bernies-setup.jpg" alt="bernie" data-no-retina> -->
+            </div>
           </div><!-- /.carousel-inner -->
 
         <!-- Controls -->
@@ -408,7 +403,7 @@
     </div>
     <!-- End Gallery Section -->
 
-    <div class="purchase">
+    <!-- <div class="purchase">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 wow fadeInDown">
@@ -417,8 +412,8 @@
                     <a href="https://wrapbootstrap.com/theme/foodster-restaurant-bar-theme-WB0P56R61" class="btn btn-primary btn-lg" target="_parent">Purchase now</a>
                 </div>
             </div>
-        </div>  
-    </div>
+        </div>
+    </div> -->
 
     <div class="map">
         <div id="homepage_map"></div>
@@ -428,36 +423,36 @@
     <footer id="footer">
           <div class="container inner">
               <div class="row">
-                  
+
                   <div class="col-md-12 text-center">
-                      <h2 class="section-heading wow fadeInDown" >Contact Foodster</h2>
+                      <h2 class="section-heading wow fadeInDown" >Contact Bernie</h2>
                   </div>
 
-                  <div class="col-md-3 col-sm-6 inner">
-                      <h3 class="section-subheading">Who we are <span>M</span></h3>
+                  <div class="col-md-4 col-sm-6 inner">
+                      <h3 class="section-subheading">Who is Bernie? <span>M</span></h3>
                       <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                       <a href="about.html" class="txt-btn">More about us</a>
                   </div><!-- /.col -->
-                  
-                  <div class="col-md-3 col-sm-6 inner">
-                      <h3 class="section-subheading">Opening Times <span>X</span></h3>
-                        <p><em>Mon &ndash; Thu</em>&nbsp;&nbsp;<strong>12pm &ndash; 10:30pm</strong></p>
-                    <p><em>Fri &ndash; Sat</em>&nbsp;&nbsp;<strong>12pm &ndash; 11pm</strong></p>
-                    <p><em>Sun</em>&nbsp;&nbsp;<strong>12pm &ndash; 10:30pm</strong></p>     
-                
+
+                  <div class="col-md-4 col-sm-6 inner">
+                      <h3 class="section-subheading">Hours <span>X</span></h3>
+                        <p><em>Sunny Days</em>&nbsp;&nbsp;<strong>11am &ndash; 8pm</strong></p>
+                    <p><em>Rainy Days</em>&nbsp;&nbsp;<strong>Depends on Winds</strong></p>
+
                   </div><!-- /.col -->
-                  
-                  <div class="col-md-3 col-sm-6 inner">
-                      <h3 class="section-subheading">Get in Touch <span>V</span></h3>
-                      <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+
+                  <div class="col-md-4 col-sm-6 inner">
+                      <h3 class="section-subheading">Get in Touch <span>t</span></h3>
+                      <p>Bernie's is located on a little patch of paradise. The easiest way to find it it to go to the <a href="http://www.islandseasresort.com">Island Seas Resort</a> beach. Turn left and walk down the beach for three minutes.</p>
                       <ul class="contacts">
-                          <li><i class="icon-location contact"></i> 84 Street, City, State 24813</li>
-                          <li><i class="icon-mobile contact"></i> +00 (123) 456 78 90</li>
-                          <li><a href="#"><i class="icon-mail-1 contact"></i> info@jcthemes.com</a></li>
+                          <li><i class="icon-location contact"></i> Silver Point Beach, Freeport, Grand Bahamas</li>
+                          <li><i class="icon-mobile contact"></i> +1 242 441 1193</li>
+                          <!-- <li><a href="#"><i class="icon-mail-1 contact"></i> info@jcthemes.com</a></li> -->
                       </ul><!-- /.contacts -->
                   </div><!-- /.col -->
-                  
-                  <div class="col-md-3 col-sm-6 inner">
+
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <!-- <div class="col-md-3 col-sm-6 inner">
                       <h3 class="section-subheading">Dining Club <span>x</span></h3>
                       <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
                         <div id="mc_embed_signup">
@@ -467,27 +462,24 @@
                                 <div id="mce-responses" class="clear">
                                     <div class="response hide" id="mce-error-response"></div>
                                     <div class="response hide" id="mce-success-response"></div>
-                                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                </div>
                                 <div class="bots"><input type="hidden" name="b_d3e5ba7f28f3f616054cdc3f7_8dd74308df" tabindex="-1" value=""></div>
                                 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-block btn-submit btn-primary"></div>
                             </div>
                             </form>
-                        </div><!--End mc_embed_signup-->
-                  </div><!-- /.col -->
-                  
-              </div><!-- /.row --> 
+                        </div>
+                  </div> -->
+
+              </div><!-- /.row -->
           </div><!-- .container -->
-        
+
           <div class="footer-bottom">
               <div class="container inner">
-                  <p class="pull-left">&copy; 2015 Foodster. Crafted by jcthemes in England. All rights reserved.</p>
+                  <p class="pull-left">&copy; Bernie's.</p>
                   <ul class="footer-menu pull-right">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="index.html#restaurants">Restaurants</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="index.html#menus">Menus</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="index.html#contact">Contact</a></li>
+                      <li><a href="#header">Home</a></li>
+                      <li><a href="#menu-one">Menu</a></li>
+                      <li><a href="#gallery">Gallery</a></li>
                   </ul><!-- .footer-menu -->
               </div><!-- .container -->
           </div><!-- .footer-bottom -->
@@ -511,7 +503,7 @@
                             <h2 class="section-heading">Foodster Manchester</h2>
                             <h3 class="section-subheading">A fine dining experience in Manchester</h3>
                             <img class="img-responsive img-centered" src="assets/images/restaurant_gallery_1.jpg" alt="" data-no-retina>
-                            
+
                             <div class="map">
                                 <div id="restaurant_map"></div>
                             </div>
@@ -665,9 +657,6 @@
     <!-- Foodster JavaScript -->
     <script src="assets/js/foodster.js"></script>
 
-    <!-- For demo purposes only -->
-    <script src="assets/demo/style.switcher.js"></script>
-
     <!-- Your Custom JavaScript -->
     <script src="assets/js/custom.js"></script>
 
@@ -683,12 +672,6 @@
         if ( $(window).scrollTop() < $('header').height() + 1 ) {
             $('nav').removeClass('navbar-shrink');
         }
-        if ( $('nav').hasClass('navbar-shrink') ) {
-            $('body').addClass('navbar-shrink-margin');
-        }
-        else {
-            $('body').removeClass('navbar-shrink-margin');
-        }
     });
     </script>
 
@@ -696,5 +679,6 @@
     <!--[if lte IE 9]>
         <script src="assets/js/plugins/placeholders.min.js"></script>
     <![endif]-->
+
 </body>
 </html>

@@ -76,25 +76,26 @@ Contact Map
 ==============================================*/
     function loadGoogleMap() {
         "use strict";
-    
+
         // Set mapPoint, latitude and longitude, zoom, and other info needed for Google Map
         var mapPoint = {
-                    'lat': 53.48,
-                    'lng': -2.24,
-                    'zoom' : 17,
-                    'infoText':'<p>55 Mosley Street\
-                                <br/>Manchester\
-                                <br/>M2 3HY</p>',
+                    'lat': 26.497767,
+                    'lng': -78.665137,
+                    'zoom' : 16,
+                    'infoText':'<p>Bernie\'s\
+                                <br/>Silver Point Beach\
+                                <br/>Freeport\
+                                <br/>Grand Bahama</p>',
                     'linkText':'View on Google Maps',
-                    'mapAddress':'55 Mosley Street, Manchester, M2 3HY',
+                    'mapAddress':'Silver Point Beach, Freeport, Grand Bahama',
                     'icon': 'assets/images/map_pin.png'
                 };
 
         if($('#restaurant_map').length){
-        
+
             var map;
             var mapstyles = [ { "stylers": [ { "saturation": -100 } ] } ];
-            
+
             var infoWindow = new google.maps.InfoWindow();
             var pointLatLng = new google.maps.LatLng(mapPoint.lat, mapPoint.lng);
 
@@ -104,28 +105,28 @@ Contact Map
                 center: pointLatLng,
                 zoomControl : true,
                 panControl : false,
-                streetViewControl : false,
+                streetViewControl : true,
                 mapTypeControl: false,
-                overviewMapControl: false,
+                overviewMapControl: true,
                 scrollwheel: false,
                 styles: mapstyles
             };
-            
+
             // Create new Google Map object for pop-up restaurant windows
             map = new google.maps.Map(document.getElementById("restaurant_map"), mapOptions);
-            
+
             // Create new Google Map object for full width map section on homepage
             map = new google.maps.Map(document.getElementById("homepage_map"), mapOptions);
 
             var marker = new google.maps.Marker({
-                position: pointLatLng, 
-                map: map, 
+                position: pointLatLng,
+                map: map,
                 title:mapPoint.linkText,
                 icon: mapPoint.icon
             });
-            
+
             var mapLink = 'https://www.google.com/maps/preview?ll='+mapPoint.lat+','+mapPoint.lng+'&z=14&q='+mapPoint.mapAddress;
-            
+
             // Set the info window content
             var html = '<div class="infowin">' + mapPoint.infoText + '<a href="'+mapLink+'" target="_blank">'+mapPoint.linkText+'</a>' + '</div>';
 
@@ -135,11 +136,11 @@ Contact Map
                 infoWindow.open(map, marker);
             });
 
-            // Function for when the map marker is clicked 
+            // Function for when the map marker is clicked
             google.maps.event.addListener(marker, 'click', function() {
                 window.open(mapLink,'_blank');
             });
-            
+
         }
     }
 
@@ -174,7 +175,7 @@ $(window).load(function() {
         // Call function for Google Maps when a modal is opened
         setTimeout(function() {
             loadGoogleMap();
-        },300);   
+        },300);
     });
 
 });
